@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="eu_tracking_panel.main_text">
+	Diese Website nutzt Cookies um Ihnen die best mögliche Online Erfahrung zu bieten.
+	Durch die Nutzung dieser Website erklären Sie sich mit der Verwendung von Cookies einverstanden. 
+	Unsere Datenschutzbestimmungen können Sie im ${legalNotice} nachlesen.
+	</entry>
+	<entry key="eu_tracking_panel.legal_notice_link">Impressum</entry>
+	<entry key="eu_tracking_panel.close_link">Ok</entry>	
+</properties>

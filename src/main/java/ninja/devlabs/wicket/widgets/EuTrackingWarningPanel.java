@@ -3,6 +3,7 @@ package ninja.devlabs.wicket.widgets;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
@@ -40,10 +41,12 @@ public class EuTrackingWarningPanel extends Panel {
 		add(closeLink);
 	}
 
+	private static long ONE_YEAR = TimeUnit.DAYS.toMillis(360);
+	
 	private static String getExpirationDate() {
 		Date expdate = new Date();
-		expdate.setTime(expdate.getTime() + TimeUnit.DAYS.toMillis(360));
-		DateFormat df = new SimpleDateFormat("dd MMM yyyy kk:mm:ss z");
+		expdate.setTime (expdate.getTime() + ONE_YEAR);
+		DateFormat df = new SimpleDateFormat("EEE, dd MMM yyyy hh:mm:ss z", Locale.ENGLISH);
 		df.setTimeZone(TimeZone.getTimeZone("GMT"));
 		return df.format(expdate);
 	}
